@@ -93,7 +93,7 @@ def common():
     buffer.close()
     plt.close()
 
-    return render_template('Common.html',
+    return render_template('compare.html',
                            Cskills=Cskills,
                            Csoftskills=Csoftskills,
                            match_rate=match_rate,
