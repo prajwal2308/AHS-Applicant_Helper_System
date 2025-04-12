@@ -1,8 +1,8 @@
 from flask import Flask, render_template, request, redirect, url_for, session
 # from flask_mysqldb import MySQL,MySQLdb
 # import MySQLdb.cursors
-from second import second
-from Third import third
+from AHS.second import second
+from AHS.Third import third
 import re
 import os
 from datetime import datetime
