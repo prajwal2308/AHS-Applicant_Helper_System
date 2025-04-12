@@ -158,8 +158,9 @@ def upload():
                     f.write(Rtext1)
                     
                #Extracting skills from resume
-                with open("static/uploads/Resumewords.txt", "r") as f:
-                    resume_text = f.read()
+                resume_path = os.path.join(os.path.dirname(__file__), 'static', 'uploads', 'Resumewords.txt')
+                with open(resume_path, 'r') as f:
+                     resume_text = f.read()
                 majorskills_path = os.path.join(os.path.dirname(__file__), 'static', 'uploads', 'majorskills2.txt')
                 with open(majorskills_path, 'r') as f:
                     majorskills = f.read().splitlines()
@@ -173,8 +174,11 @@ def upload():
                         f.write(skill.upper() + "\n")
                 
                 #Extracting Softskills from resume.
-                with open("static/uploads/softskills.txt",'r') as s:
-                    skills_list1 = [line.strip().lower() for line in s.readlines()]
+                # with open("static/uploads/softskills.txt",'r') as s:
+                #     skills_list1 = [line.strip().lower() for line in s.readlines()]
+                softskills_path = os.path.join(os.path.dirname(__file__), 'static', 'uploads', 'softskills.txt')
+                with open(softskills_path, 'r') as s:
+                    softskills = s.read().splitlines()
                     
                 pattern11 = re.compile("|".join(map(re.escape, skills_list1)), re.IGNORECASE)
                 matches11 = re.findall(pattern11, resume_text.lower())
