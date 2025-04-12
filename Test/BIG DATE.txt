@@ -1,0 +1,24 @@
+We are looking to hire a talented Big Data Engineer to develop and manage our company?s Big Data solutions. In this role, you will be required to design and implement Big Data tools and frameworks, implement ELT processes, collaborate with development teams, build cloud platforms, and maintain the production system.
+
+To ensure success as a Big Data Engineer, you should have in-depth knowledge of Hadoop technologies, excellent project management skills, and high-level problem-solving skills. A top-notch Big Data Engineer understands the needs of the company and institutes scalable data solutions for its current and future needs.
+
+Big Data Engineer Responsibilities:
+Meeting with managers to determine the company?s Big Data needs.
+Developing Hadoop systems.
+Loading disparate data sets and conducting pre-processing services using Hive or Pig.
+Finalizing the scope of the system and delivering Big Data solutions.
+Managing the communications between the internal system and the survey vendor.
+Collaborating with the software research and development teams.
+Building cloud platforms for the development of company applications.
+Maintaining production systems.
+Training staff on data resource management.
+Big Data Engineer Requirements:
+Bachelor?s degree in Computer Engineering or Computer Science.
+Previous experience as a Big Data Engineer.
+In-depth knowledge of Hadoop, Spark, and similar frameworks.
+Knowledge of scripting languages including Java, C++, Linux, Ruby, PHP, Python, and R.
+Knowledge of NoSQL and RDBMS databases including Redis and MongoDB.
+Familiarity with Mesos, AWS, and Docker tools.
+Excellent project management skills.
+Good communication skills.
+Ability to solve complex networking, data, and software issues.

@@ -1,0 +1,75 @@
+{% extends 'layout.html' %}
+
+{% block title %}Upload{% endblock %}
+{% block content %}
+<html><head>
+  
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+  UPLOADCARE_DEBUG_UPLOADS = true;
+  UPLOADCARE_PUBLIC_KEY = 'c69de1eb35d237b19010';
+
+  </script>
+   <script src="static\script.js"></script>
+<script>
+    function myFunction() {
+      var x = document.getElementById("fileInput").required;
+      document.getElementById("demo").innerHTML = x;
+    }
+    </script>
+    <script src="static/ckeditor/ckeditor.js"></script>
+   
+
+    
+</head>
+<body>
+  <div class="loader"></div>
+<div class="uploadcontainer">
+    <div class="subdiv">
+    
+      <div>
+        <form method="post" action="/upload" enctype="multipart/form-data" class="form-inline">
+         <div class="form-group" style="display:block;">
+           <h2>Upload Your Resume</h2>
+           <center>
+           
+                           
+                           <div style="padding-top:10px;">
+                            
+                            <label for="images" class="drop-container">
+                              <span class="drop-title">Drop files here (.pdf)</span>
+                              or
+                              <input type="file" name="files[]" id="fileInput"  required>
+                            </label>
+                           
+                           </center>
+           </div>
+         </div>
+                      <div class="form-group" style="padding-left:130px;display:block;">
+                       <h2>Paste your Job Description (Optional)<h6>(Include Requirments, Responsibility and Skills)</h6></h2>
+                     <textarea name="text" rows="5" cols="80" ></textarea>
+      
+       <script>
+         CKEDITOR.replace("text", {
+           enterMode: CKEDITOR.ENTER_BR,
+           autoParagraph: false
+         });
+       </script>
+     <br>
+                      <!-- <label>Choose JD: </label>
+                       <input type="file" name="files[]" id="fileInput" class="form-control"  required >-->
+                  </div>
+                      <input style="display: block;width: 100%" type="submit" name="submit" class="btn btn-success" value="UPLOAD" onclick="myFunction()"/>
+                  </form>
+     
+     
+       </div>
+     
+     </div>
+     
+     
+     </body>
+     </html>
+     {% endblock %}

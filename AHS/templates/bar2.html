@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Points Bar Animation</title>
+  <style>
+    .points-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    
+    .points-bar {
+      width: 200px;
+      height: 20px;
+      background-color: #f1f1f1;
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    
+    .progress {
+      height: 100%;
+      width: 0;
+      transition: width 1s ease;
+      border-radius: 20px;
+    }
+    
+    .points-text {
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      transform: translateY(-50%);
+      color: #333;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="points-container">
+    <div class="points-bar">
+      <div class="progress" id="progress1"></div>
+      <span class="points-text" id="points-text1">0%</span>
+    </div>
+    
+    <div class="points-bar">
+      <div class="progress" id="progress2"></div>
+      <span class="points-text" id="points-text2">0%</span>
+    </div>
+    
+    <div class="points-bar">
+      <div class="progress" id="progress3"></div>
+      <span class="points-text" id="points-text3">0%</span>
+    </div>
+  </div>
+  
+  <script>
+    function animatePointsBar(progressId, pointsTextId, percentage) {
+      var progressElement = document.getElementById(progressId);
+      var pointsTextElement = document.getElementById(pointsTextId);
+      var width = 0;
+      var animationDuration = 1000; // Animation duration in milliseconds
+      var increment = percentage / (animationDuration / 10); // Calculate the increment per 10 milliseconds
+
+      function calculateColor(currentWidth) {
+        var red = 255;
+        var green = Math.round(255 - (255 * (currentWidth / 100)));
+        var blue = 0;
+        return 'rgb(' + blue + ',' + green + ',' + red + ')';
+      }
+
+      function animationStep() {
+        width += increment;
+        progressElement.style.width = width + '%';
+        pointsTextElement.textContent = Math.round(width) + '%';
+        progressElement.style.backgroundColor = calculateColor(width);
+
+        if (width < percentage) {
+          requestAnimationFrame(animationStep);
+        }
+      }
+
+      animationStep();
+    }
+
+    var matchPercentage1 = 75; // Replace with your actual match percentage for bar 1
+    animatePointsBar('progress1', 'points-text1', matchPercentage1);
+
+    var matchPercentage2 = 50; // Replace with your actual match percentage for bar 2
+    animatePointsBar('progress2', 'points-text2', matchPercentage2);
+
+    var matchPercentage3 = 30; // Replace with your actual match percentage for bar 3
+    animatePointsBar('progress3', 'points-text3', matchPercentage3);
+  </script>
+</body>
+</html>

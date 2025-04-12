@@ -1,0 +1,24 @@
+We are looking to hire an experienced AngularJS Developer to join our dynamic team. As a lead Developer, you will be responsible for creating a top-level coding-base using Angular best practices. Your role will require you to implement an exciting and streamlined user experience in the form of a Java-based desktop and mobile web-app.
+
+To ensure success as an AngularJS Developer, you should have extensive knowledge of theoretical software engineering, be proficient in JavaScript, HTML, and CSS, and have excellent project management skills. Ultimately, a top-class AngularJS Developer can design and build a streamlined application to company specifications that perfectly meet the needs of the user.
+
+AngularJS Developer Responsibilities:
+Designing and developing user interfaces using AngularJS best practices.
+Adapting interface for modern internet applications using the latest front-end technologies.
+Writing JavaScript, CSS, and HTML.
+Developing product analysis tasks.
+Making complex technical and design decisions for AngularJS projects.
+Developing application codes and unit tests in AngularJS, Java Technologies, and Rest Web Services.
+Conducting performance tests.
+Consulting with the design team.
+Ensuring high performance of applications and providing support.
+AngularJS Developer Requirements:
+Bachelor?s Degree in Computer Science, Computer Engineering or similar.
+Previous work experience as an AngularJS Developer.
+Proficient in CSS, HTML, and writing cross-browser compatible code.
+Experience using JavaScript building tools like Gulp or Grunt.
+Knowledge of JavaScript MV-VM/MVC frameworks including AngluarJS.
+Excellent project management skills.
+Proven experience implementing front-end and back-end JavaScript applications.
+Excellent communication skills.
+Critical thinker and good problem-solver.

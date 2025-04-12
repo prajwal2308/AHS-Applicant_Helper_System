@@ -1,0 +1,153 @@
+
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+{% block content %}
+<html>
+  <head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+  UPLOADCARE_DEBUG_UPLOADS = true;
+  UPLOADCARE_PUBLIC_KEY = 'c69de1eb35d237b19010';
+
+  </script>
+   <script src="static\script.js"></script>
+   
+<script>
+    function myFunction() {
+      var x = document.getElementById("fileInput").required;
+      document.getElementById("demo").innerHTML = x;
+    }
+    </script>
+    <script src="static/ckeditor/ckeditor.js"></script>
+  </head>
+  <body>
+   
+
+<div class="headercontainer">
+    <img src="/static/header.png" >
+    <div class="centered" >BETTER THE RESUME</div>
+    <div class="textcentered"> AHS is a free resume keyboard scanner and 
+        job recommendation system for job seekers. Our website intelligently 
+        identifies the skills and keyword that are present in your resume and compare with job description.
+    </div>
+   
+    <div class="buttoncentered">
+        <!--<a href="{{ url_for('upload') }}"><button style="color: #3274d6;font-weight: bold;padding: 10px 26px;cursor:pointer;">SCAN NOW    <i class="fa fa-arrow-right" aria-hidden="true"></i></button></a>
+        --><a href="#next" ><button style="color: #3274d6;font-weight: bold;padding: 10px 26px;cursor:pointer;">SCAN NOW    <i class="fa fa-arrow-right" aria-hidden="true"></i></button></a>
+      
+      </div>
+    <div class="row">
+        <div class="column">
+          <div class="card">
+            <h3><i class="far fa-clock" style='font-size:36px;color: #3274d6'></i></h3>
+            <p><b>RAPID</b></p>
+            <p>Scan the resume with faster phase precise atmost accurate results</p>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <h3><i class="fa fa-users" aria-hidden="true" style='font-size:36px;color: #3274d6;'></i></h3>
+            <p><b>USER FRIENDLY</b></p>
+            <p>AHS is more user friendly with easy interface and free to use</p>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <h3><i class='fas fa-shield-alt' style='font-size:36px;color: #3274d6;'></i></i></h3>
+            <p><b>SECURITY</b></p>
+            <p>The data in the resume is not shared and privacy is maintained</p>
+          </div>
+            </div>
+</div>
+
+
+    </div>
+<!--<h2>Home Page</h2>
+<p><b>Welcome back, {{ username }}!</p>-->
+<!--<html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    function myFunction() {
+      var x = document.getElementById("fileInput").required;
+      document.getElementById("demo").innerHTML = x;
+    }
+    </script>
+    
+</head>
+<body>
+<div class="container">
+<h2>Upload Your Resume</h2>
+    <div class="row">
+        <div class="col-lg-12">
+            
+  <div>-->
+   <!-- File upload form -->
+   <!-- <p id="msg"></p>
+   <form method="post" action="/upload" enctype="multipart/form-data" class="form-inline">
+    <div class="form-group">
+                      <label>Choose FIles: </label>
+                      <input type="file" name="files[]" id="fileInput" class="form-control"  required >
+                 </div>
+                 <input type="submit" name="submit" class="btn btn-success" value="UPLOAD" onclick="myFunction()"/>
+             </form>
+  </div>
+  </div>
+ </div>
+</div>
+
+-->
+<div class="uploadcontainer" id="next" style="margin-top: 200px;">
+ <center> <div class="head" style="font-size:25px;font-weight: bold;padding-top:30px;margin-bottom:30px;">Get your Result within Seconds</div></center>
+  <div class="subdiv">
+      <form method="post" action="/upload" enctype="multipart/form-data" class="form-inline">
+       <div class="form-group" style="display:block;">
+        
+         <h2>Upload Your Resume</h2>
+         <center>
+         
+                         
+                         <div style="padding-top:10px;">
+                          
+                          <label for="images" class="drop-container">
+                            <span class="drop-title">Drop files here (.pdf)</span>
+                            or
+                            <input type="file" name="files[]" id="fileInput"  required>
+                          </label>
+                         
+                         </center>
+         </div>
+       </div>
+                    <div class="form-group" style="padding-left:130px;display:block;">
+                     <h2>Paste your Job Description (Optional)<h6>(Include Requirments, Responsibility and Skills)</h6></h2>
+                   <textarea name="text" rows="5" cols="80" style="width: 1212px; height: 172px;"></textarea>
+    
+     <script>
+       CKEDITOR.replace("text", {
+         enterMode: CKEDITOR.ENTER_BR,
+         autoParagraph: false
+       });
+     </script>
+   <br>
+                    <!-- <label>Choose JD: </label>
+                     <input type="file" name="files[]" id="fileInput" class="form-control"  required >-->
+                </div>
+                    <input style="display: block;width: 100%" type="submit" name="submit" class="btn btn-success" value="UPLOAD" onclick="myFunction()"/>
+                </form>
+   
+   
+     </div>
+   
+   </div>
+   
+
+</body>
+</html>
+{% endblock %}

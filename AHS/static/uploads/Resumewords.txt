@@ -1,0 +1,49 @@
+PRAJWAL SRINIVAS
+GRADUATE STUDENT & TEACHING ASSISTANT
+prajwal.srinivas238@gmail.com |848-230-1591 |linkedin.com/in/prajwalsrinivas238 |New Brunswick, NJ
+PROFESSIONAL SUMMARY
+Graduate student in Computer Science with 1.5 years of experience as a Software developer at CSG. Adept at back end
+development using API, Java and Perl. Passionate about leveraging advanced academic knowledge and eager to contribute
+in cutting-edge technology.
+EDUCATION
+Rutgers University - New Brunswick , Master’s in Computer Science June 2026
+MVJ College of Engineering , Bachelors in Computer Science May 2023
+TECHNICAL SKILLS
+BACK-END TECHNOLOGIES: Python, Javascript, Java, JDBC, MySql, C/C++(basics).
+FRONT-END TECHNOLOGIES: Flask, BootStrap, Django, HTML5, CSS, WordPress, PHP.
+API TOOLS: PERest API, REST API. Google Serp API.
+CLOUD TECHNOLOGIES: Azure Devops, AWS.
+MISCELLANEOUS: Postman, Customer Connect, Git, LaTex, Jira, Expression Parse Models (Epm), Data Structures.
+RELATED WORK EXPERIENCE
+RUTGERS UNIVERSITY |JavaScript, HTML, CSS, SQL
+TEACHING ASSISTANT AND GRADER | NEWBRUNSWICK , NJ Sept 2024 - Present
+•Teaching HTML, CSS, JavaScript and SQL Programming to 50+ Students Strengthening their web development and
+coding proficiency. which resulted in a 25% increase in average performance on practical assignments.
+•Planning and Providing lab support,office hours and Mentoring for over 100 students, Assisting to reduce assignment
+submission errors by 30% and increasing on-time project completions by 20%.
+CSG INTERNATIONAL |RESTApi, Azure-Devops, Postman, Java, Perl, Jira.
+SOFTWARE DEVELOPER GRAD AND INTERN | BENGALURU , INDIA Feb 2023 - Aug 2024
+Customer Connect- telco-specific desktop agent enhancements
+•Ideated and Developed some of key features for Customer Connect, helping streamline customer service operations for
+telecommunication providers and contributing to the overall software development lifecycle.
+•Collaborated on development of new code packs for features in billingCare, Contributing to enhancements of Customer
+connect billing solutions and improving overall functionality by reducing load on single code pack.
+•Collaborated with senior developers to design and implement new features for Customer Connect, gaining experience in
+agile software development methodologies as part of the SDLC.
+•Conducted Comprehensive Testing: Executed rigorous testing protocols for newly developed features, ensuring that all
+functionalities met quality standards before deployment, which reduced post-release defects by 20%.
+Kelesco IT Services PVT LTD |Wordpress, Hostinger, CSS, HTML.
+WEBSITE DEVELOPER AND DESIGNER INTERN | M UMBAI , INDIA May 2022 - Oct 2022
+Anyfeast.com
+•Led initial website development efforts over a 5-month internship, implementing key features such as recipe exploration,
+blog functionality, and e-commerce capabilities.
+•Architected website infrastructure using WordPress, managing critical components including database setup, hosting
+configuration via Hostinger, and implementing essential site functionalities.
+PROJECTS
+Applicant Helper System using Python and NLP
+•Innovated and developed an NLP and Flask-based Python project that extracts, compares, and UI visualizes matching and
+missing skills between resumes and job descriptions and scrapes the job links for the respective skills from the resume,
+improving resume parsing accuracy by 75% compared to traditional keyword-based systems.
+•Engineered a machine learning model achieving 85% accuracy in matching candidate qualifications to job requirements,
+enhancing the application process for job seekers.
+•Implemented advanced natural language processing algorithms that reduced resume screening time by 40%

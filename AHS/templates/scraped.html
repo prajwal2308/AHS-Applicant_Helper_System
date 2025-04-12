@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    {% extends 'layout.html' %}
+
+{% block title %}Display{% endblock %}
+{% block content %}
+
+<head>
+    <title>Job Links</title>
+</head>
+<body>
+    <ul  class="linksdisplay">
+    {% for job in links %}
+        <li class="scrapeli"><a href="{{ job.url }}">{{ job.title }}</a></li>
+        
+    {% endfor %}
+    </ul>
+</body>
+
+{% endblock %}</html>

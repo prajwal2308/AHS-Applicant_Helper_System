@@ -1,0 +1,44 @@
+
+{% extends 'layout.html' %}
+{% block title %}Profile{% endblock %}
+{% block content %}
+<html><head>
+<script src="static\script.js"></script></head>
+<body>
+    
+<div>
+<div class="profile">
+    
+    <center> <h3><?php
+        echo "hello world"?>
+        Your account details are below:</h3>
+    <table>
+        <tr>
+            <td>Username:</td>
+            <td>{{ account['username'] }}</td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td>{{ account['password'] }}</td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>{{ account['email'] }}</td>
+        </tr>
+        <!--<tr>
+            <td>Resume Filename:</td>
+            <td>{{ account['Rskillfname'] }}</td>
+        </tr>-->
+        <tr>
+            <td>Resume skills:</td>
+            <td class="special">{{ msg }}</td>
+        </tr>
+        <tr>
+            <td>uploaded on:</td>
+            <td>{{ account['uploaded_on'] }}</td>
+        </tr>
+    </table></center>
+</div>
+</div></body>
+</html>
+{% endblock %}

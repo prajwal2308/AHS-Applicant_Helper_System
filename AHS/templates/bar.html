@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Points Bar Animation</title>
+  <style>
+    .progress {
+      height: 100%;
+      width: 0;
+      transition: width 1s ease;
+      border-radius: 20px;
+    }
+    
+    .points-bar {
+        width: 200px;
+        height: 20px;
+        background-color: #f1f1f1;
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-bottom: 20px; /* Add margin to create space for the points-text element */
+      }
+      
+      .points-text {
+        position: absolute;
+        top: 50%;
+        right: 5px; /* Adjust the right position as needed */
+        transform: translateY(-50%);
+        color: #333;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      
+  </style>
+</head>
+<body>
+  <div class="points-bar">
+    <div class="progress" id="progress"></div>
+    <span class="points-text" id="points-text">0%</span>
+  </div>
+  
+  <script>
+    function animatePointsBar(percentage) {
+      var progressElement = document.getElementById('progress');
+      var pointsTextElement = document.getElementById('points-text');
+      var width = 0;
+      var animationDuration = 1000; // Animation duration in milliseconds
+      var increment = percentage / (animationDuration / 10); // Calculate the increment per 10 milliseconds
+      var colorStart = [255, 0, 0]; // Start color (red)
+      var colorEnd = [16, 185, 129]; // End color (green)
+
+      function calculateColor(currentWidth) {
+        var color = [];
+
+        for (var i = 0; i < 3; i++) {
+          color[i] = Math.round(colorStart[i] + (colorEnd[i] - colorStart[i]) * (currentWidth / percentage));
+        }
+
+        return 'rgb(' + color.join(',') + ')';
+      }
+
+      function animationStep() {
+        width += increment;
+        progressElement.style.width = width + '%';
+        pointsTextElement.textContent = Math.round(width) + '%';
+        progressElement.style.backgroundColor = calculateColor(width);
+
+        if (width < percentage) {
+          requestAnimationFrame(animationStep);
+        }
+      }
+
+      animationStep();
+    }
+
+    var matchPercentage = 75; // Replace with your actual match percentage
+    animatePointsBar(matchPercentage);
+  </script>
+</body>
+</html>
