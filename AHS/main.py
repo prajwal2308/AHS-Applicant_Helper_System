@@ -160,7 +160,10 @@ def upload():
                #Extracting skills from resume
                 with open("static/uploads/Resumewords.txt", "r") as f:
                     resume_text = f.read()
-                with open("static/uploads/majorskills2.txt", 'r') as f:
+               majorskills_path = os.path.join(os.path.dirname(__file__), 'static', 'uploads', 'majorskills2.txt')
+               with open(majorskills_path, 'r') as f:
+                 majorskills = f.read().splitlines()
+
                         skills_list = [line.strip() for line in f.readlines()]
                 pattern = re.compile("|".join(map(re.escape, skills_list)), re.IGNORECASE)
                 matches = re.findall(pattern, resume_text.lower())
