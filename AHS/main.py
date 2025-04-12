@@ -162,7 +162,7 @@ def upload():
                     resume_text = f.read()
                majorskills_path = os.path.join(os.path.dirname(__file__), 'static', 'uploads', 'majorskills2.txt')
                with open(majorskills_path, 'r') as f:
-                 majorskills = f.read().splitlines()
+                    majorskills = f.read().splitlines()
 
                         skills_list = [line.strip() for line in f.readlines()]
                 pattern = re.compile("|".join(map(re.escape, skills_list)), re.IGNORECASE)
