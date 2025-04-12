@@ -1,0 +1,15 @@
+Flask
+gunicorn
+spacy
+nltk
+beautifulsoup4
+lxml
+scikit-learn
+pandas
+numpy
+requests
+joblib
+python-docx
+PyPDF2
+pdfminer.six
+tqdm
