@@ -178,7 +178,7 @@ def upload():
                 #     skills_list1 = [line.strip().lower() for line in s.readlines()]
                 softskills_path = os.path.join(os.path.dirname(__file__), 'static', 'uploads', 'softskills.txt')
                 with open(softskills_path, 'r') as s:
-                    softskills = s.read().splitlines()
+                    skills_list1 = [line.strip() for line in s.readlines()]
                     
                 pattern11 = re.compile("|".join(map(re.escape, skills_list1)), re.IGNORECASE)
                 matches11 = re.findall(pattern11, resume_text.lower())
