@@ -9,6 +9,7 @@ pandas
 numpy
 requests
 joblib
+matplotlib
 python-docx
 PyPDF2
 pdfminer.six
