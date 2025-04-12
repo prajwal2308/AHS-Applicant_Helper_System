@@ -12,6 +12,10 @@ from PyPDF2 import PdfReader
 
 app = Flask(__name__)
 app.secret_key = '1234'
+UPLOAD_FOLDER = os.path.join('static', 'uploads')
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
 app.register_blueprint(second
                        ,url_prefix="/scrapes")
 app.register_blueprint(third,url_prefix="/compares")
