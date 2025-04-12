@@ -94,8 +94,15 @@ def common():
     plt.close()
 
     return render_template('compare.html',
-                           Cskills=Cskills,
-                           Csoftskills=Csoftskills,
-                           match_rate=match_rate,
-                           smatch_rate=smatch_rate,
-                           image=image_base64)
+            Cskills=Cskills,
+            Csoftskills=Csoftskills,
+            match_rate=match_rate,
+            smatch_rate=smatch_rate,
+            hmatch_rate=match_rate,  # for progress1
+            Rskills=resume_text,  # assuming resume_text is the raw resume
+            JDskills="\n".join(skills_list),  # from JD file
+            Rsoft=sresume_text,
+            JDsoft="\n".join(sskills_list),  # from soft JD file
+            wc=len(resume_text.split()),    # Word count
+)
+
