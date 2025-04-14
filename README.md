@@ -2,7 +2,7 @@
 
 # AHS – Applicant Helper System
 
-**AHS (Applicant Helper System)** is a Flask-based web application that simulates an Applicant Tracking System (ATS). It leverages Natural Language Processing (NLP) techniques to extract and analyze skills from resumes, compares them with job descriptions (JDs), and provides a match score to assist recruiters and applicants in evaluating compatibility.
+**AHS (Applicant Helper System)** is a Flask-based web application that simulates an Applicant Tracking System (ATS). It leverages Natural Language Processing (NLP) techniques to extract and analyze skills from resumes, compares them with job descriptions (JDs), and provides a match score to assist job-seekers and applicants in evaluating compatibility.
 
 ## Features
 
