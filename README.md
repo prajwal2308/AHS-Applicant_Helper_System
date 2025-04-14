@@ -6,11 +6,11 @@
 
 ## Features
 
-- **User Authentication**: Secure login and registration system for users.
+- **User Authentication**:  login and registration system for users.(disbled registeration due to database flexibity).
 - **Resume and JD Upload**: Upload resumes and job descriptions in various formats for analysis.
 - **Skill Extraction**: Utilizes NLP to extract core and soft skills from uploaded documents.
 - **Skill Comparison**: Compares extracted skills from resumes and JDs to calculate a match score.
-- **Job Scraping**: Scrapes job listings based on extracted skills to provide relevant opportunities.
+- **Job Scraping (disbled)**: Scrapes job listings based on extracted skills to provide relevant opportunities.
 - **User-Friendly Interface**: Intuitive UI for easy navigation and interaction.
 
 ## Installation
