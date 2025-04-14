@@ -2,7 +2,7 @@
 
 This is a checkpoint of project till the extraction of skills page and it is more accurate compared to many code.
 
-1.Login Page/Register Page
+1. Login Page/Register Page
 	-Helps user to register and login
 
 2. Home Page with only function of scan resume. (One page can be reduced and placed in homepage itself)
