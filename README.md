@@ -42,3 +42,96 @@ WHY US AHS:
 7. we suggest direct links for the particular job roles mentionded in resume.
 
 
+
+# AHS – Applicant Helper System
+
+**AHS (Applicant Helper System)** is a Flask-based web application that simulates an Applicant Tracking System (ATS). It leverages Natural Language Processing (NLP) techniques to extract and analyze skills from resumes, compares them with job descriptions (JDs), and provides a match score to assist recruiters and applicants in evaluating compatibility.
+
+## Features
+
+- **User Authentication**: Secure login and registration system for users.
+- **Resume and JD Upload**: Upload resumes and job descriptions in various formats for analysis.
+- **Skill Extraction**: Utilizes NLP to extract core and soft skills from uploaded documents.
+- **Skill Comparison**: Compares extracted skills from resumes and JDs to calculate a match score.
+- **Job Scraping**: Scrapes job listings based on extracted skills to provide relevant opportunities.
+- **User-Friendly Interface**: Intuitive UI for easy navigation and interaction.
+
+## Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/prajwal2308/AHS-Applicant_Helper_System.git
+   cd AHS-Applicant_Helper_System
+   ```
+
+2. **Create a virtual environment**:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Run the application**:
+   ```bash
+   flask run
+   ```
+
+   The application will be accessible at `http://127.0.0.1:5000/`.
+
+## Usage
+
+1. **Register/Login**: Create an account or log in to access the application's features.
+2. **Upload Documents**: Navigate to the upload page to submit your resume and job description.
+3. **Analyze Skills**: The application will extract and display core and soft skills from both documents.
+4. **View Match Score**: Compare the extracted skills to see how well the resume matches the job description.
+5. **Explore Job Opportunities**: Use the job scraping feature to find relevant job listings based on your skills.
+
+## Technologies Used
+
+- **Backend**: Flask (Python)
+- **Frontend**: HTML, CSS, JavaScript
+- **NLP Libraries**: spaCy, NLTK
+- **Web Scraping**: BeautifulSoup, Requests
+- **Database**: SQLite
+
+## Project Structure
+
+```
+AHS-Applicant_Helper_System/
+├── app.py
+├── templates/
+│   ├── login.html
+│   ├── register.html
+│   ├── upload.html
+│   ├── display.html
+│   └── scrape.html
+├── static/
+│   ├── css/
+│   └── js/
+├── models/
+│   └── user.py
+├── utils/
+│   ├── skill_extractor.py
+│   └── job_scraper.py
+├── requirements.txt
+└── README.md
+```
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- Inspired by the need to automate and improve the recruitment process.
+- Utilizes open-source libraries and tools for NLP and web development.
+
+
