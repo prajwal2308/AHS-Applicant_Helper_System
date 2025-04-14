@@ -84,11 +84,11 @@ WHY US AHS:
 
 ## Usage
 
-1. **Register/Login**: Create an account or log in to access the application's features.
+1. **Register/Login**: log in to access the application's features usn: admin and password: admin.
 2. **Upload Documents**: Navigate to the upload page to submit your resume and job description.
 3. **Analyze Skills**: The application will extract and display core and soft skills from both documents.
 4. **View Match Score**: Compare the extracted skills to see how well the resume matches the job description.
-5. **Explore Job Opportunities**: Use the job scraping feature to find relevant job listings based on your skills.
+5. **Explore Job Opportunities**: Use the job scraping feature to find relevant job listings based on your skills.(blocked)
 
 ## Technologies Used
 
@@ -96,16 +96,17 @@ WHY US AHS:
 - **Frontend**: HTML, CSS, JavaScript
 - **NLP Libraries**: spaCy, NLTK
 - **Web Scraping**: BeautifulSoup, Requests
-- **Database**: SQLite
+- **Database**: SQLite [No Database included]
 
 ## Project Structure
 
 ```
 AHS-Applicant_Helper_System/
-├── app.py
+├── main.py
+├── second.py
+├── third.py
 ├── templates/
 │   ├── login.html
-│   ├── register.html
 │   ├── upload.html
 │   ├── display.html
 │   └── scrape.html
@@ -121,13 +122,8 @@ AHS-Applicant_Helper_System/
 └── README.md
 ```
 
-## Contributing
+## Contribution
 
-Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 
